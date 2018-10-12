@@ -1,0 +1,71 @@
+/*font-family: 'Rock Salt', cursive;
+font-family: 'Pirata One', cursive;
+font-family: 'Sonsie One', cursive;
+font-family: 'Kumar One', cursive;
+font-family: 'Smokum', cursive;
+font-family: 'Butcherman', cursive;
+font-family: 'Asset', cursive;*/
+
+body {
+    background-image: url("../images/background.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    margin: 10px;
+    border: 10px solid rgb(158, 19, 19);
+    border-style: double;
+    font-family: 'Butcherman', cursive;
+    text-align: center;
+    font-size: 100px;
+    color: rgb(158, 19, 19);
+    /*background: -webkit-linear-gradient(#eee, #333);
+    --webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Butcherman', cursive;*/
+    text-shadow: 2px 2px rgb(233, 220, 220);
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.crystal-container {
+    /*display: flex;
+    justify-content: center;*/
+    padding: 10px;
+}
+
+img {
+    padding: 10px;
+}
+
+p {
+    font-family: 'Kumar One', cursive;
+    font-size: 20px;
+    text-align: center;
+    color: rgb(29, 28, 28);
+}
+
+.random-number {
+    background-color: rgb(233, 220, 220);
+    height: 100px;
+}
+
+.score {
+    background-color: rgb(233, 220, 220);
+    display: flex;
+    justify-content: center;
+
+}
