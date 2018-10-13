@@ -58,15 +58,25 @@
     var computerOutput
     var playerInput
 
-    /*function randomIntFromInterval(min, max) // min and max included
-{
-    return Math.floor(Math.random(19, 120)*(max-min+1)+min);
-    console.log();
-}*/
 
 $("#agate-skull").on("click", function(){
     var agateSkull = Math.floor(Math.random() * 12) + 1;
     $("#scorecard").text(agateSkull);
+});
+
+$("#green-skull").on("click", function(){
+    var greenSkull = Math.floor(Math.random() * 12) + 1;
+    $("#scorecard").text(greenSkull);
+});
+
+$("#black-skull").on("click", function(){
+    var blackSkull = Math.floor(Math.random() * 12) + 1;
+    $("#scorecard").text(blackSkull);
+});
+
+$("#red-skull").on("click", function(){
+    var redSkull = Math.floor(Math.random() * 12) + 1;
+    $("#scorecard").text(redSkull);
 });
 
 function UpdateScores(){
