@@ -20,18 +20,18 @@
             <div class="container">
 
                 <div class="crystal-container">
-                    <img src="assets/images/agate-skull.jpg" width="200px" height="200px">
-                    <img src="assets/images/green-skull.jpg" width="200px" height="200px">
-                    <img src="assets/images/black-skull.jpg" width="200px" height="200px">
-                    <img src="assets/images/red-skull.jpg" width="200px" height="200px">
+                    <img src="assets/images/agate-skull.jpg" id="agate-skull" width="200px" height="200px">
+                    <img src="assets/images/green-skull.jpg" id="green-skull" width="200px" height="200px">
+                    <img src="assets/images/black-skull.jpg" id="black-skull" width="200px" height="200px">
+                    <img src="assets/images/red-skull.jpg" id="red-skull" width="200px" height="200px">
                             
                 </div>
 
                 <div id="stats" class="statistics">
                     <div class="stats-grid">
-                        <div id="ran-num" class="random-number stat-item"><p>something</p></div>
+                        <div id="ran-num" class="random-number stat-item"><p></p></div>
 
-                        <div id="wins-losses" class="win-loss stat-item"><p>something else</p></div>
+                        <div id="wins-losses" class="win-loss stat-item"><p></p></div>
 
                         <div id="scorecard" class="score stat-item"><p>Your score is...<br><span id="digit"></span></p></div>
                     </div>
@@ -54,18 +54,50 @@
     var score = 0;
     var wins = 0;
     var losses = 0;
+    var targetNumber = "";
     var computerOutput
+    var playerInput
+
+    /*function randomIntFromInterval(min, max) // min and max included
+{
+    return Math.floor(Math.random(19, 120)*(max-min+1)+min);
+    console.log();
+}*/
+
+$("#agate-skull").on("click", function(){
+    var agateSkull = Math.floor(Math.random() * 12) + 1;
+    $("#scorecard").text(agateSkull);
+});
+
+function UpdateScores(){
+
+};
+
+$("#ran-num").on("click", function(){
+    var min = 19;
+    var max = 120;
+    computerOutput = Math.floor(Math.random() * (+max - +min + 1) + min);
+    $("#ran-num").text(computerOutput);
+});
 
     console.log("ready!");
     //initiates game
     $(".btn").on("click", function(){
         console.log("start");
-        $("#wins-losses").html("<p>wins:0<br>losses:0</p>"); 
+        
+        $("#wins-losses").html("<p>wins:</p>" + wins + "<br><p>losses:</p>" + losses); 
+
+        if(playerInput === targetNumber){
+            wins++
+            newGame();
+        } else {
+
+        }
 
 
     });
 
-    $()
+  
 
 
     
