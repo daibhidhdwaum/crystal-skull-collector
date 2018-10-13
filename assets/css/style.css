@@ -18,6 +18,7 @@ h1 {
     margin: 10px;
     border: 10px solid rgb(158, 19, 19);
     border-style: double;
+    border-radius: 25px;
     font-family: 'Butcherman', cursive;
     text-align: center;
     font-size: 100px;
@@ -29,8 +30,12 @@ h1 {
     text-shadow: 2px 2px rgb(233, 220, 220);
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 .content {
-    width: 60%;
     display: flex;
     justify-content: center;
 }
@@ -39,11 +44,12 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    padding: 10px;
 }
 
 .crystal-container {
-    /*display: flex;
-    justify-content: center;*/
+    display: flex;
+    justify-content: space-between;
     padding: 10px;
 }
 
@@ -58,14 +64,51 @@ p {
     color: rgb(29, 28, 28);
 }
 
+.stats-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.stats-items {
+    flex-wrap: wrap;
+}
+
 .random-number {
     background-color: rgb(233, 220, 220);
     height: 100px;
+    width: 31%;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 10px;
 }
 
 .score {
     background-color: rgb(233, 220, 220);
+    height: 100px;
+    width: 31%;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.win-loss {
+    background-color: rgb(233, 220, 220);
+    height: 100px;
+    width: 31%;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.btn {
+    background-color: rgb(233, 220, 220);
+    margin: 10px;
+    font-family: 'Kumar One', cursive;
+}
+
+.button {
     display: flex;
     justify-content: center;
-
 }
