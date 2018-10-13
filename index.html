@@ -33,7 +33,7 @@
 
                         <div id="wins-losses" class="win-loss stat-item"><p>something else</p></div>
 
-                        <div id="scorecard" class="score stat-item"><p>Your score is...</p></div>
+                        <div id="scorecard" class="score stat-item"><p>Your score is...<br><span id="digit"></span></p></div>
                     </div>
                 </div>
 
@@ -57,10 +57,15 @@
     var computerOutput
 
     console.log("ready!");
-
+    //initiates game
     $(".btn").on("click", function(){
         console.log("start");
+        $("#wins-losses").html("<p>wins:0<br>losses:0</p>"); 
+
+
     });
+
+    $()
 
 
     
