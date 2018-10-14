@@ -12,18 +12,19 @@
     
 </head>
 <body>
-
-    <header><h1>Crystal Collector</h1></header>
     <div class="container">
+        
+        <header><h1>Crystal Collector</h1></header>
+    
         <div class="content">
 
             <div class="container">
 
-                <div class="crystal-container">
-                    <img src="assets/images/agate-skull.jpg" id="agate-skull" width="200px" height="200px">
-                    <img src="assets/images/green-skull.jpg" id="green-skull" width="200px" height="200px">
-                    <img src="assets/images/black-skull.jpg" id="black-skull" width="200px" height="200px">
-                    <img src="assets/images/red-skull.jpg" id="red-skull" width="200px" height="200px">
+                <div id="crystal-container" class="crystals">
+                    <img src="assets/images/agate-skull.jpg" id="skull" class="agate-skull" width="200px" height="200px">
+                    <img src="assets/images/green-skull.jpg" id="skull" class="green-skull" width="200px" height="200px">
+                    <img src="assets/images/black-skull.jpg" id="skull" class="black-skull" width="200px" height="200px">
+                    <img src="assets/images/red-skull.jpg" id="skull" class="red-skull" width="200px" height="200px">
                             
                 </div>
 
@@ -47,9 +48,9 @@
     </div>
 
 
-    <script type="text/javascript">
+<script type="text/javascript" src="assets/javascript/game.js">
     
-    $(document).ready(function(){
+/*$(document).ready(function(){
     
     var score = 0;
     var wins = 0;
@@ -58,44 +59,24 @@
     var computerOutput
     var playerInput
 
-
-$("#agate-skull").on("click", function(){
-    var agateSkull = Math.floor(Math.random() * 12) + 1;
-    $("#scorecard").text(agateSkull);
-});
-
-$("#green-skull").on("click", function(){
-    var greenSkull = Math.floor(Math.random() * 12) + 1;
-    $("#scorecard").text(greenSkull);
-});
-
-$("#black-skull").on("click", function(){
-    var blackSkull = Math.floor(Math.random() * 12) + 1;
-    $("#scorecard").text(blackSkull);
-});
-
-$("#red-skull").on("click", function(){
-    var redSkull = Math.floor(Math.random() * 12) + 1;
-    $("#scorecard").text(redSkull);
-});
-
-function UpdateScores(){
-
-};
-
-$("#ran-num").on("click", function(){
-    var min = 19;
-    var max = 120;
-    computerOutput = Math.floor(Math.random() * (+max - +min + 1) + min);
-    $("#ran-num").text(computerOutput);
-});
-
     console.log("ready!");
-    //initiates game
-    $(".btn").on("click", function(){
+
+     //initiates game
+     $(".btn").on("click", function(){
         console.log("start");
+
+    $("#ran-num").on("click", function(){
+        var min = 19;
+        var max = 120;
+        computerOutput = Math.floor(Math.random() * (+max - +min)) + +min;
+        //$("#target-number").text(computerOutput);
+        console.log(computerOutput);
+    });
         
-        $("#wins-losses").html("<p>wins:</p>" + wins + "<br><p>losses:</p>" + losses); 
+        $("#wins-losses").html("<p>wins:</p><br><p>losses:</p>");
+        $("#wins-losses")
+        
+        
 
         if(playerInput === targetNumber){
             wins++
@@ -107,15 +88,29 @@ $("#ran-num").on("click", function(){
 
     });
 
-  
-
-
-    
-
-    
-    
-    
+    //randomly generates a number between 1 and 12
+    $("#agate-skull").on("click", function(){
+        var agateSkull = Math.floor(Math.random() * 12) + 1;
+        $("#scorecard").text(agateSkull);
     });
+
+    $("#green-skull").on("click", function(){
+        var greenSkull = Math.floor(Math.random() * 12) + 1;
+        $("#scorecard").text(greenSkull);
+    });
+
+    $("#black-skull").on("click", function(){
+        var blackSkull = Math.floor(Math.random() * 12) + 1;
+        $("#scorecard").text(blackSkull);
+    });
+
+    $("#red-skull").on("click", function(){
+        var redSkull = Math.floor(Math.random() * 12) + 1;
+        $("#scorecard").text(redSkull);
+    });
+
+
+});*/
     
     </script>
     

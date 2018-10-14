@@ -30,11 +30,6 @@ h1 {
     text-shadow: 2px 2px rgb(233, 220, 220);
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-}
-
 .content {
     display: flex;
     justify-content: center;
@@ -47,7 +42,7 @@ h1 {
     padding: 10px;
 }
 
-.crystal-container {
+.crystals {
     display: flex;
     justify-content: space-between;
     padding: 10px;
