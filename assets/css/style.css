@@ -54,9 +54,11 @@ img {
 
 p {
     font-family: 'Kumar One', cursive;
-    font-size: 20px;
+    font-size: 16px;
     text-align: center;
     color: rgb(29, 28, 28);
+    padding: 0px;
+    margin: 0px;
 }
 
 .stats-grid {
@@ -66,13 +68,9 @@ p {
     flex-wrap: wrap;
 }
 
-.stats-items {
-    flex-wrap: wrap;
-}
-
 .random-number {
     background-color: rgb(233, 220, 220);
-    height: 100px;
+    height: 150px;
     width: 31%;
     margin: 10px;
     border-radius: 25px;
@@ -81,7 +79,7 @@ p {
 
 .score {
     background-color: rgb(233, 220, 220);
-    height: 100px;
+    height: 150px;
     width: 31%;
     margin: 10px;
     border-radius: 25px;
@@ -90,7 +88,7 @@ p {
 
 .win-loss {
     background-color: rgb(233, 220, 220);
-    height: 100px;
+    height: 150px;
     width: 31%;
     margin: 10px;
     border-radius: 25px;
