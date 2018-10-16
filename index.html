@@ -3,58 +3,24 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Crystal Game</title>
+    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Asset|Butcherman|Kumar+One|Pirata+One|Rock+Salt|Smokum|Sonsie+One" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-    
 </head>
 <body>
-    <div class="container">
-        
-        <header><h1>Crystal Collector</h1></header>
-    
-        <div class="content">
-
-            <div class="container">
-
-                <div class="crystals">
-                        <img src="assets/images/agate-skull.jpg" id="skull" class="agate" width="200px" height="200px">
-                        <img src="assets/images/green-skull.jpg" id="skull" class="green" width="200px" height="200px">
-                        <img src="assets/images/black-skull.jpg" id="skull" class="black" width="200px" height="200px">
-                        <img src="assets/images/red-skull.jpg" id="skull" class="red" width="200px" height="200px">
-                            
+        <div class="container">
+                <div class="jumbotron">
+                        <div class="container">
+                          <h1>Crystal Skull Collector</h1>
+                        </div>
+                        
+                        <div id="crystals"></div>   
+                        <div><span id="target-number"></span></div> 
                 </div>
-
-                <div id="stats" class="statistics">
-                    <div class="stats-grid">
-                        <div id="wins-losses" class="win-loss stat-item"><p class="win-or-loss"></p><p class="win"></p><p class="loss"></p></div>
-                        <div id="ran-num" class="random-number stat-item"><p></p></div>
-                        <div id="scorecard" class="score stat-item"><p></p></div>
-                    </div>
-                </div>
-
-
-                <div class="button">
-                    <button type="button" class="btn">Start Game</button>
-                </div>
-
-            </div>
         </div>
-    </div>
-
-     <!--<img src="assets/images/agate-skull.jpg" id="skull" class="agate-skull" width="200px" height="200px">
-                    <img src="assets/images/green-skull.jpg" id="skull" class="green-skull" width="200px" height="200px">
-                    <img src="assets/images/black-skull.jpg" id="skull" class="black-skull" width="200px" height="200px">
-                    <img src="assets/images/red-skull.jpg" id="skull" class="red-skull" width="200px" height="200px">-->
-                            
-    
-
-
-<script type="text/javascript" src="assets/javascript/game.js">
-</script>
-    
+    <script type="text/javascript" src="assets/javascript/game.js"></script>    
 </body>
 </html>
