@@ -6,6 +6,14 @@ font-family: 'Smokum', cursive;
 font-family: 'Butcherman', cursive;
 font-family: 'Asset', cursive;*/
 
+body {
+    background-image: url("../images/background.jpg");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 h1 {
     margin: 10px;
     border: 10px solid rgb(158, 19, 19);
@@ -25,14 +33,47 @@ h1 {
     padding: 20px;
 }
 
-.display-4 {
-
+#stats {
+    background-color: rgb(233, 220, 220);
+    height: 150px;
+    width: 31%;
+    margin: 10px;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center; 
 }
 
-body {
-    background-image: url("../images/background.jpg");
-    background-color: black;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+p {
+    font-family: 'Kumar One', cursive;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(29, 28, 28);
+    padding: 0px;
+    margin: 0px;
+}
+
+#target-number {
+    font-family: 'Kumar One', cursive;
+    font-size: 40px;
+     
+}
+
+.content {
+    display: flex;
+}
+
+.skull {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid red;
+    width: 200px;
+    height: 200px;
+}
+
+.agate {
+    background-image: url("../images/agate-skull.jpg"); 
 }
