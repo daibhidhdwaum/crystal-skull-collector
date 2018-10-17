@@ -36,14 +36,11 @@ h1 {
 #stats {
     background-color: rgb(233, 220, 220);
     height: 150px;
-    width: 31%;
+    display: inline-block;
+    width: 30%;
     margin: 10px;
     border-radius: 25px;
     padding: 10px;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center; 
 }
 
 p {
@@ -66,9 +63,8 @@ p {
 }
 
 .skull {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    margin: 0px 38px 40px 38px;
+    display: inline-block;
     border: 1px solid red;
     width: 200px;
     height: 200px;
@@ -77,3 +73,4 @@ p {
 .agate {
     background-image: url("../images/agate-skull.jpg"); 
 }
+
