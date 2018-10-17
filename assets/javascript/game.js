@@ -6,10 +6,11 @@ var skullImage
 var score 
 var wins = 0;
 var losses = 0;
-previous = 0;
+var lastNum = 0;
 
 
 $("#target-number").html(targetNumber);
+
 
 for(var i = 0; i < 4; i++){
 
@@ -18,6 +19,7 @@ for(var i = 0; i < 4; i++){
     skullImage.attr({
         "class": "skull agate green black red",
         "data-random": randomNumbers
+        
     });
 
     $("#skulls").append(skullImage);
@@ -26,15 +28,29 @@ for(var i = 0; i < 4; i++){
         
         var skullNum = parseInt($(this).attr("data-random"));
 
-        previous += skullNum;
+        lastNum += skullNum;
 
-        console.log(previous);
-       
-    })
+        console.log(lastNum);
+
+        if(lastNum === targetNumber){
+            wins++
+            $(".wins").html("Wins:" + wins);
+            
+        } else if (lastNum > targetNumber){
+            losses++
+            $(".losses").html("Losses:" + losses);
+
+        }else {
+            
+        }
+
+    });
 }
 
     
-        if(score === targetNumber){
+
+    
+       /* if(score === targetNumber){
             wins++
             newGame();
         } else if (score > targetNumber){
@@ -42,7 +58,7 @@ for(var i = 0; i < 4; i++){
             newGame();
         }else {
             
-        }
+        }*/
 
 
 
