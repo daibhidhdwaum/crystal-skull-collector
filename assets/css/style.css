@@ -11,7 +11,7 @@ font-family: 'Asset', cursive;*/
 page
 ----------*/
 body {
-    background-image: url("../images/background.jpg");
+    background-image: url("../images/background2.jpg");
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
@@ -20,15 +20,15 @@ body {
 
 h1 {
     margin: 10px;
-    border: 10px solid rgb(158, 19, 19);
+    border: 10px solid rgb(139, 36, 36);
     border-style: double;
     border-radius: 25px;
     font-family: 'Butcherman', cursive;
     text-align: center;
     font-size: 80px;
     margin: 0px;
-    color: rgb(158, 19, 19);
-    text-shadow: 2px 2px rgb(233, 220, 220);
+    color: rgb(139, 36, 36);
+    text-shadow: 2px 2px rgb(200, 200, 200);
     background-color: transparent;
 }
 
@@ -81,7 +81,7 @@ stats
 }
 
 #stats {
-    background-color: rgb(233, 220, 220);
+    background-color: rgb(200, 200, 200);
     height: 150px;
     display: block;
     float: right;
@@ -108,7 +108,7 @@ stats
 }
 
 #rules {
-    background-color: rgb(233, 220, 220);
+    background-color: rgb(200, 200, 200);
     height: 250px;
     border-radius: 25px;
     padding: 20px;
