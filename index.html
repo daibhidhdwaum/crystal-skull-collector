@@ -1,49 +1,59 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <link href="https://fonts.googleapis.com/css?family=Asset|Butcherman|Kumar+One|Pirata+One|Rock+Salt|Smokum|Sonsie+One" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
-</head>
-<body>
-    <div class="container">
-        <div class="jumbotron">
-            <div class="container">
-                <h1>Crystal Skull Collector</h1>
-            </div>
-        </div>       
-                        
-        <div class="container content">
-        </div>
-            <div id="skulls">
-            </div>   
-                <div id="stats">
-                    <span id="target-number"></span>
-                </div> 
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Page Title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Asset|Butcherman|Kumar+One|Pirata+One|Rock+Salt|Smokum|Sonsie+One" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="jumbotron">
+                <div class="container">
+                    <h1>Crystal Skull Collector</h1>
+                </div>
+            </div>       
                             
-                <div id="stats">
-                    <span id ="skull-number">
-                        <p class="skull-num"></p>
-                    </span>
+            <div class="container content">
+            
+                <div id="skulls">
                 </div> 
-                            
-                <div id="stats">
-                    <span id ="win-loss">
-                        <p class="win-or-loss"></p>
-                            <br>
-                        <p class="wins"></p>
-                        <p class="losses"></p>
-                    </span>
-                </div> 
-            </div>
+            
+                <div id="stats-container">
+                                
+                    <div id="stats">
+                        <span id ="skull-number">
+                            <p class="skull-num"></p>
+                        </span>
+                    </div> 
+
+                    <div id="stats">
+                        <span id ="win-loss">
+                            <p class="win-or-loss"></p>
+                                <br>
+                            <p class="wins"></p>
+                            <p class="losses"></p>
+                        </span>
+                    </div> 
+
+                    <div id="stats">
+                        <span id="target-number"></span>
+                    </div> 
                 
-    </div>
-    
-    <script type="text/javascript" src="assets/javascript/game.js"></script>    
-</body>
+                    
+                </div>
+                
+                <div id="rules"></div>
+
+            </div>       
+        </div>
+        
+        <script type="text/javascript" src="assets/javascript/game.js"></script>  
+
+    </body>
 </html>
