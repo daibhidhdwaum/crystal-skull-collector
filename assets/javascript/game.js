@@ -10,42 +10,50 @@ var lastNum = 0;
 
 
 $("#target-number").html(targetNumber);
+$(".wins").html("Wins: ");
+$(".losses").html("Losses: ");
+$(".win-or-loss").html("Wins and Losses");
+$(".skull-num").html("Your Score:")
 
-
+function newGame(){
 for(var i = 0; i < 4; i++){
 
-    var randomNumbers = Math.floor(Math.random() * 12) + 1;
+    var randomNumbers = Math.floor(Math.random() * 11) + 1;
     skullImage = $("<img>");
     skullImage.attr({
         "class": "skull agate green black red",
         "data-random": randomNumbers
-        
     });
 
     $("#skulls").append(skullImage);
-
-    $(".agate").on("click", function(){
-        
-        var skullNum = parseInt($(this).attr("data-random"));
-
-        lastNum += skullNum;
-
-        console.log(lastNum);
-
-        if(lastNum === targetNumber){
-            wins++
-            $(".wins").html("Wins:" + wins);
-            
-        } else if (lastNum > targetNumber){
-            losses++
-            $(".losses").html("Losses:" + losses);
-
-        }else {
-            
-        }
-
-    });
+    console.log(randomNumbers);
 }
+
+
+$(".agate").on("click", function(){
+        
+    var skullNum = parseInt($(this).attr("data-random"));
+    lastNum += skullNum;
+
+    $(".skull-num").append(lastNum);
+
+    console.log(lastNum);
+
+    if(lastNum === targetNumber){
+        wins++
+        $(".wins").append(wins);
+        $(".win-or-loss").html("You Win!!!");
+    } else if (lastNum > targetNumber){
+        losses++
+        $(".losses").append(losses);
+        $(".win-or-loss").html("You Lose!!!");
+    }else {
+            
+    }
+});
+}
+
+newGame();
 
     
 

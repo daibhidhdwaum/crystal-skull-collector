@@ -46,7 +46,7 @@ h1 {
 p {
     font-family: 'Kumar One', cursive;
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     color: rgb(29, 28, 28);
     padding: 0px;
     margin: 0px;
@@ -73,4 +73,16 @@ p {
 .agate {
     background-image: url("../images/agate-skull.jpg"); 
 }
+
+.win-or-loss {
+    font-family: 'Kumar One', cursive;
+    font-size: 20px;
+}
+
+.wins, .losses, .skull-num {
+    font-family: 'Kumar One', cursive;
+    font-size: 25px;
+}
+
+
 
