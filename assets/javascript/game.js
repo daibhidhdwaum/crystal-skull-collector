@@ -6,21 +6,21 @@ $(document).ready(function(){
     var wins = 0;
     var losses = 0;
     var score = 0;
-    var skulls = [  "assets/images/agate-skull.jpg",
-                        "assets/images/green-skull.jpg",
-                        "assets/images/black-skull.jpg",
-                        "assets/images/red-skull.jpg"
-                    ]
+    var skulls = ["assets/images/agate-skull.jpg",
+                  "assets/images/green-skull.jpg",
+                  "assets/images/black-skull.jpg",
+                  "assets/images/red-skull.jpg"
+                  ];
     
     //assigned DOM elements
-    $(".wins").html("Wins: ");
+    $(".wins").html("Wins:  ");
     $(".losses").html("Losses: ");
     $(".win-or-loss").html("Wins and Losses");
     $(".skull-num").html("Your Score:")
     $("#rules").html("<p>You will be given a random target number at the beginning of the game.<br><br>Each skull holds a point value that will be revealed to you upon clicking and then added to your point score. These points will change when you start a new game.<br><br>To win the game match the random number. If your score goes above the random number you lose the game.</p>");
 
     
-    //function initiates and resets the game(non-functional)
+    //function initiates game(non-functional)
     startGame();
     function startGame(){
         $('item').keypress();
