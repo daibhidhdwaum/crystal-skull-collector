@@ -36,7 +36,7 @@ $(document).ready(function(){
     
     //starts new game
     function newGame(){
-    for(var i = 0; i < 4; i++){
+    for(var i = 0; i < 5; i++){
 
     
         //randomnly generates numbers used to reach target number
