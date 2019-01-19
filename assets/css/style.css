@@ -4,14 +4,16 @@ font-family: 'Sonsie One', cursive;
 font-family: 'Kumar One', cursive;
 font-family: 'Smokum', cursive;
 font-family: 'Butcherman', cursive;
-font-family: 'Asset', cursive;*/
+font-family: 'Asset', cursive;
+font-family: 'Cinzel', serif;
+*/
 
 
 /*---------
 page
 ----------*/
 body {
-    background-image: url("../images/background2.jpg");
+    background-image: url("../images/blackmarble.jpg");
     background-color: black;
     background-repeat: no-repeat;
     background-size: cover;
@@ -23,22 +25,23 @@ h1 {
     border: 10px solid rgb(139, 36, 36);
     border-style: double;
     border-radius: 25px;
-    font-family: 'Butcherman', cursive;
+    font-family: 'Cinzel Decorative', cursive;
     text-align: center;
     font-size: 80px;
     margin: 0px;
     color: rgb(139, 36, 36);
-    text-shadow: 2px 2px rgb(200, 200, 200);
-    background-color: transparent;
+    /* text-shadow: 2px 2px rgb(200, 200, 200); */
+    background-color: #101010;
 }
 
 p {
-    font-family: 'Kumar One', cursive;
-    font-size: 16px;
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
     text-align: left;
     color: rgb(29, 28, 28);
     padding: 0px;
     margin: 0px;
+
 }
 
 .jumbotron {
@@ -86,18 +89,18 @@ stats
 }
 
 #target-number {
-    font-family: 'Kumar One', cursive;
+    font-family: 'Cinzel Decorative', cursive;
     font-size: 40px;
      
 }
 
 .win-or-loss {
-    font-family: 'Kumar One', cursive;
+    font-family: 'Cinzel Decorative', cursive;
     font-size: 20px;
 }
 
 .wins, .losses, .skull-num {
-    font-family: 'Kumar One', cursive;
+    font-family: 'Cinzel Decorative', cursive;
     font-size: 25px;
 }
 
