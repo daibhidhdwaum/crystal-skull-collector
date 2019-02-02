@@ -6,7 +6,7 @@ $(document).ready(function(){
     var wins = 0;
     var losses = 0;
     var score = 0;
-    var skulls = ["assets/images/agate-skull.jpg",
+    var skulls = ["assets/images/white-skull.jpg",
                   "assets/images/green-skull.jpg",
                   "assets/images/black-skull.jpg",
                   "assets/images/red-skull.jpg"
